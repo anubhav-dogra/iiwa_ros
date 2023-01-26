@@ -12,7 +12,7 @@ aluminum peripherial evaluation case.
   <!-- Includes -->
   <!-- <xacro:include filename="$(find realsense2_description)/urdf/_materials.urdf.xacro" />
   <xacro:include filename="$(find realsense2_description)/urdf/_usb_plug.urdf.xacro" /> -->
-  <xacro:include filename="$(find iiwa_description)/urdf/_d435.gazebo.xacro"/>
+  <xacro:include filename="$(find iiwa_description)/urdf/realsense/_d435.gazebo.xacro"/>
 
   <xacro:macro name="sensor_d435" params="parent *origin name:=camera topics_ns:=camera
    use_nominal_extrinsics:=false add_plug:=false use_mesh:=true">

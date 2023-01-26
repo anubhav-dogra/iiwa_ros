@@ -69,5 +69,6 @@
     <include file="$(find iiwa_control)/launch/iiwa_control.launch">
        <arg name="controller" value="$(arg controller)"/>
     </include>
+    <include file="$(find iiwa_description)/launch/spawn_human.launch"/>
 </launch>
 

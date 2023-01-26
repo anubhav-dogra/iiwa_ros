@@ -2,7 +2,7 @@
 <robot name="human_in_gazebo">
   <link name="world"/>
   <joint name="human_on_world" type="fixed">
-      <origin xyz="0.05 -0.75 0.0" rpy="0 0 0"/>
+      <origin xyz="0.5 -0.5 0.05" rpy="0 0 0"/>
       <parent link="world"/>
       <child link="human_link"/>
   </joint>
@@ -36,6 +36,7 @@
   </link>
   <gazebo reference="human_laying">
     <!-- <material>Gazebo/OrangeTransparentOverlay</material> -->
-    <!-- <turnGravityOff>false</turnGravityOff> -->
+    <static>true</static>
+    <turnGravityOff>true</turnGravityOff>
     </gazebo>
 </robot>

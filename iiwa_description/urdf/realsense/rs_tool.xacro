@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot name="rs_tool" xmlns:xacro="http://www.ros.org/wiki/xacro">
 <!-- Tool properties -->
-  <!-- <xacro:property name="tool_mass" value="0.050" /> -->
+  <xacro:property name="tool_mass" value="0.050" />
   <!--property name="tool_joint_offset" value="0.00 0.00 0.00" /-->
   <!--property name="tool_link_offset" value="0.00 0.00 0.10" /-->
   
@@ -19,16 +19,16 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-	      <!-- <mesh filename="package://iiwa_description/meshes/tools/visual/rscamera_tool.STL"/> -->
-		<cylinder length="0.1275" radius="0.020"/>
+	      <mesh filename="package://iiwa_description/meshes/tools/visual/rscamera_tool.STL"/>
+		<!-- <cylinder length="0.1275" radius="0.020"/> -->
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <!-- <mesh filename="package://iiwa_description/meshes/tools/collision/rscamera_tool.STL"/> -->
-		<cylinder length="0.1275" radius="0.020"/>
+        <mesh filename="package://iiwa_description/meshes/tools/collision/rscamera_tool.STL"/>
+		<!-- <cylinder length="0.1275" radius="0.020"/> -->
       </geometry>
       <material name="Grey"/>
     </collision>

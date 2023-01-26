@@ -6,12 +6,7 @@
   <!-- Import Rviz colors -->
   <xacro:include filename="$(find iiwa_description)/urdf/materials.xacro" />
   <!--Import the iiwa14 macro -->
-  <xacro:include filename="$(find iiwa_description)/urdf/iiwa14.xacro"/>
-  <!--Import the rs_tool macro -->
-  <xacro:include filename="$(find iiwa_description)/urdf/rs_tool.xacro"/>
-  <!-- <xacro:include filename="$(find iiwa_description)/urdf/rs_camera_ee.urdf.xacro"/> -->
-
-
+  <xacro:include filename="$(find iiwa_description)/urdf/iiwa14_rs_tool.xacro"/>
   
   <!--  Arguments for the iiwa14 macro  -->
   <xacro:arg name="hardware_interface" default="PositionJointInterface"/>
