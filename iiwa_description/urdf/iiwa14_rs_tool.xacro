@@ -401,8 +401,8 @@
         <inertia ixx="1"  ixy="0"  ixz="0" iyy="1" iyz="0" izz="1" />
       </inertial>
     </link>
-
-    <xacro:include filename="$(find iiwa_description)/urdf/realsense/rs_tool.xacro"/> 
+    <!-- <xacro:include filename="$(find iiwa_description)/urdf/realsense/rs_tool.xacro"/>  -->
+    <xacro:include filename="$(find iiwa_description)/urdf/realsense/rs_tera_tool.xacro"/> 
     <xacro:include filename="$(find iiwa_description)/urdf/realsense/rs_camera_ee.urdf.xacro"/>
 
     <!--Extensions -->

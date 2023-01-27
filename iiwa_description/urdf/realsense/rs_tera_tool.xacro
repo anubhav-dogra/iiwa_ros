@@ -17,19 +17,19 @@
   Else, one can define it using a geometric representation that approximate it, like a cylinder (see commented lines) -->
   <link name="tool_link">
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="-0.120 0.038 0" rpy="0 0 0"/>
       <geometry>
-	      <mesh filename="package://iiwa_description/meshes/tools/visual/rscamera_tool.STL"/>
-        <!-- <mesh filename="package://iiwa_description/meshes/tools/visual/rs_tera_tool_urdf.STL"/> -->
+	      <!-- <mesh filename="package://iiwa_description/meshes/tools/visual/rscamera_tool.STL"/> -->
+        <mesh filename="package://iiwa_description/meshes/tools/visual/rs_tera_tool_urdf.STL"/>
 		<!-- <cylinder length="0.1275" radius="0.020"/> -->
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="-0.120 0.038 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iiwa_description/meshes/tools/collision/rscamera_tool.STL"/>
-        <!-- <mesh filename="package://iiwa_description/meshes/tools/visual/rs_tera_tool_urdf.STL"/> -->
+        <!-- <mesh filename="package://iiwa_description/meshes/tools/collision/rscamera_tool.STL"/> -->
+        <mesh filename="package://iiwa_description/meshes/tools/visual/rs_tera_tool_urdf.STL"/>
 		<!-- <cylinder length="0.1275" radius="0.020"/> -->
       </geometry>
       <material name="Grey"/>
@@ -40,7 +40,7 @@
   <joint name="tool_tip_joint" type="fixed">
     <parent link="tool_link" />
     <child link = "tool_link_ee" />
-    <origin xyz="0.03 0.08 0.1" rpy="0 0 0" />   
+    <origin xyz="0.03 0.08 0.225" rpy="0 0 0" />   
   </joint>
   
   <!--  The TCP frame is here defined -->
